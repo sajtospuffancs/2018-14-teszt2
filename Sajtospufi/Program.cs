@@ -14,6 +14,7 @@ namespace Sajtospufi
             int hanyat = Convert.ToInt32(Console.ReadLine());
             int i = 0;
             int legnagyobb = 0;
+            int legkisebb;
             int[] szamok = new int[hanyat];
             do
             {
@@ -26,6 +27,15 @@ namespace Sajtospufi
                 i++;
             } while (i != szamok.Length);
             Console.WriteLine("A legnagyobb megadott szám: {0}",legnagyobb);
+            legkisebb = szamok[0];
+            for (int j = 0; j < szamok.Length; j++)
+            {
+                if (szamok[j] < legkisebb)
+                {
+                    legkisebb = szamok[j];
+                }
+            }
+            Console.WriteLine("A legkisebb megadott szám: {0}",legkisebb);
 
             Console.ReadKey();
         }
