@@ -10,10 +10,11 @@ namespace Sajtospufi
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kérem adjon meg 10 számot!");
+            Console.WriteLine("Kérem adja meg hány elemet akar megadni!");
+            int hanyat = Convert.ToInt32(Console.ReadLine());
             int i = 0;
             int legnagyobb = 0;
-            int[] szamok = new int[10];
+            int[] szamok = new int[hanyat];
             do
             {
                 Console.Write("\nA(z) {0}. szám: ", i + 1);
