@@ -10,7 +10,6 @@ namespace Sajtospufi
     {
         static void Main(string[] args)
         { 
-
         }
     }
 }
